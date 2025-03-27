@@ -21,8 +21,10 @@ const App = () => {
         style={styles.image}
       >
         <Text style={styles.title}>coffee</Text>
-        <Link href="/explore" style={{marginHorizontal:'auto'}} asChild>
-          <Pressable>Explore</Pressable>
+        <Link href="/explore" style={{ marginHorizontal: "auto" }} asChild>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>Explore</Text>
+          </Pressable>
         </Link>
       </ImageBackground>
     </View>
@@ -58,11 +60,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 2,
     opacity: 1,
   },
-  button:{
-    height:60,
-    borderRadius:20,
-    backgroundColor:'rgba(0,0,0,0,0.75)',
-    padding:6
+  button: {
+    height: 60,
+    borderRadius: 20,
+    backgroundColor: "rgba(0,0,0,0,0.75)",
+    padding: 6,
   },
   buttonText: {
     color: "white",
